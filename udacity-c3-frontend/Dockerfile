@@ -8,7 +8,6 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm ci
 # Bundle app source
-RUN npm update
 COPY . .
 RUN ionic build
 

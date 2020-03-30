@@ -5,9 +5,11 @@ metadata:
     service: frontend
   name: frontend
 spec:
+  type: NodePort
   ports:
   - name: "8100"
     port: 8100
+    nodePort: 30035
     targetPort: 80
   selector:
     service: frontend

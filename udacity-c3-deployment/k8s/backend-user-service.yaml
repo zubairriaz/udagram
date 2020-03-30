@@ -5,6 +5,7 @@ metadata:
     service: backend-user
   name: backend-user
 spec:
+  type: LoadBalancer
   ports:
   - name: "8080"
     port: 8080

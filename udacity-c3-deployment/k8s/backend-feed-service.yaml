@@ -5,6 +5,7 @@ metadata:
     service: backend-feed
   name: backend-feed
 spec:
+  type: LoadBalancer
   ports:
   - name: "8080"
     port: 8080
